@@ -2,9 +2,6 @@ package calculos;
 
 public class FiltroRecomendacao {
 
-    @SuppressWarnings("unused")
-    private String recomendacao;
-
     public void filtrarFilme(Classificavel classificavel) {
         if (classificavel.getClassificacao() >= 4) {
             System.out.println("Está entre os preferidos do momento");
@@ -14,5 +11,4 @@ public class FiltroRecomendacao {
             System.out.println("Coloque na sua lista para assistir depois");
         }
     }
-
 }

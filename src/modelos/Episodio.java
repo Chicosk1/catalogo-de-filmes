@@ -3,35 +3,30 @@ package modelos;
 import calculos.*;
 
 public class Episodio implements Classificavel {
+
+    private int numero;
     private String nome;
     private Serie serie;
-    private int numero, totalVisualizacoes;
+    private int totalVisualizacoes;
 
+    // Getters
     public int getTotalVisualizacoes() {
         return totalVisualizacoes;
     }
-    
+
     public int getNumero() {
         return numero;
     }
-    
+
     public String getNome() {
         return nome;
     }
-    
+
     public Serie getSerie() {
         return serie;
     }
     
-    @Override
-    public int getClassificacao() {
-        if (totalVisualizacoes > 100) {
-            return 4;
-        } else {
-            return 2;
-        }
-    }
-
+    // Setters
     public void setTotalVisualizacoes(int totalVisualizacoes) {
         this.totalVisualizacoes = totalVisualizacoes;
     }
@@ -48,4 +43,13 @@ public class Episodio implements Classificavel {
         this.serie = serie;
     }
 
+    // Metodos
+    @Override
+    public int getClassificacao() {
+        if (totalVisualizacoes > 100) {
+            return 4;
+        } else {
+            return 2;
+        }
+    }
 }
