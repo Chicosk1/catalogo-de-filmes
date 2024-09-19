@@ -2,11 +2,10 @@ package modelos;
 
 public class Serie extends Titulo {
     
-    private int temporadas;
     private boolean ativa;
-    private int episodiosPorTemporada;
-    private int minutosPorEpisodio;
+    private int temporadas, episodiosPorTemporada, minutosPorEpisodio;
     
+    // Getters
     public int getTemporadas() {
         return temporadas;
     }
@@ -20,6 +19,7 @@ public class Serie extends Titulo {
         return minutosPorEpisodio;
     }
     
+    // Setters
     public void setTemporadas(int temporadas) {
         this.temporadas = temporadas;
     }
